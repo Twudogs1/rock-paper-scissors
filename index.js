@@ -8,6 +8,12 @@ const finalResult = document.getElementById("finalResult")
 let playerCount = 0;
 let computerCount = 0;
 
+function toggleDarkMode() {
+    document.body.classList.toggle('darkMode')
+    
+    console.log('dark mode activated')
+}
+
 function playGame(playerChoice){
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let result = ""
