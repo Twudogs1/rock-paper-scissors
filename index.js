@@ -9,9 +9,8 @@ let playerCount = 0;
 let computerCount = 0;
 
 function toggleDarkMode() {
-    document.body.classList.toggle('darkMode')
-    
-    console.log('dark mode activated')
+    document.body.classList.toggle('darkMode');
+    finalResult.style.color = document.body.classList.contains("darkMode") ? "white" : "black";
 }
 
 function playGame(playerChoice){
@@ -57,7 +56,7 @@ function playGame(playerChoice){
             break 
 
         case "its a tie!":
-            finalResult.style.color = "black"
+            finalResult.style.color = document.body.classList.contains("darkMode") ? "white" : "black";
             break
     }
     playerResult.textContent = playerChoice;
