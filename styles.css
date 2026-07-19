@@ -25,3 +25,18 @@
     background-color:black;
     color: hsl(0, 0%, 80%);
 }
+
+#darkModeBtn {
+    border:none;
+    padding:10px 15px;
+    border-radius:20px;
+    background-color:grey;
+    font-size:1rem;
+}
+
+#darkModeBtn:hover {
+    background-color: rgb(156, 156, 156);
+    font-weight:bold;
+    transition: background-color 200ms;
+    text-shadow: 0px 0px 5px white;
+}

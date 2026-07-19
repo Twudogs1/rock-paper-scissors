@@ -11,6 +11,7 @@ let computerCount = 0;
 function toggleDarkMode() {
     document.body.classList.toggle('darkMode');
     finalResult.style.color = document.body.classList.contains("darkMode") ? "white" : "black";
+    document.getElementById("darkModeBtn").textContent = document.body.classList.contains("darkMode") ? "Disabled Dark Mode" : "Enable Dark Mode"
 }
 
 function playGame(playerChoice){
